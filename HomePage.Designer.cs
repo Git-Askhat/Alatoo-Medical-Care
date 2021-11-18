@@ -34,6 +34,7 @@
             this.historyPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.homePagePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.history = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.upcoming = new System.Windows.Forms.Panel();
@@ -43,8 +44,8 @@
             this.add = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.alphaBlendTextBox1 = new ZBobb.AlphaBlendTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.history.SuspendLayout();
             this.upcoming.SuspendLayout();
             this.homePageOpacity.SuspendLayout();
@@ -104,6 +105,19 @@
             this.history.Size = new System.Drawing.Size(200, 300);
             this.history.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(85, 180);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "0";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -131,7 +145,8 @@
             // upcoming
             // 
             this.upcoming.BackColor = System.Drawing.Color.Black;
-            this.upcoming.Controls.Add(this.alphaBlendTextBox1);
+            this.upcoming.Controls.Add(this.label3);
+            this.upcoming.Controls.Add(this.label2);
             this.upcoming.Controls.Add(this.panel3);
             this.upcoming.Controls.Add(this.button3);
             this.upcoming.Location = new System.Drawing.Point(499, 100);
@@ -204,30 +219,26 @@
             this.button2.Text = "Add Patient";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(65, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
             // 
-            // alphaBlendTextBox1
+            // label3
             // 
-            this.alphaBlendTextBox1.BackAlpha = 10;
-            this.alphaBlendTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.alphaBlendTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.alphaBlendTextBox1.ForeColor = System.Drawing.Color.White;
-            this.alphaBlendTextBox1.Location = new System.Drawing.Point(50, 175);
-            this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
-            this.alphaBlendTextBox1.Size = new System.Drawing.Size(100, 31);
-            this.alphaBlendTextBox1.TabIndex = 2;
-            this.alphaBlendTextBox1.Text = "0";
-            this.alphaBlendTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(85, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "0";
             // 
             // HomePage
             // 
@@ -270,6 +281,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private ZBobb.AlphaBlendTextBox alphaBlendTextBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

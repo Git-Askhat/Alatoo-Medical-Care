@@ -38,10 +38,7 @@ namespace Alatoo_Medical_Care
             loginButton.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, loginButton.Width, loginButton.Height, 40, 40));
 
 
-
         }
-        string admin = "";
-        string password = "";
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -58,16 +55,23 @@ namespace Alatoo_Medical_Care
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            admin = e.ToString();
-            password = e.ToString();
-            if (admin.Equals("admin") && password.Equals("admin")) {
-                HomePage homePage = new HomePage();
-                homePage.Show();
+            string admin, password;
+            admin = loginText.Text;
+            password = loginPasword.Text;
+            HomePage homepage = new HomePage();
+
+            if (admin.Equals("admin") && password.Equals("admin"))
+            {
+                homepage.Show();
 
                 Visible = false;
+            } else if (admin.Equals("") && password.Equals(""))
+            {
+                label1.Text = "Enter username";
+                label2.Text = "Enter password";
             } else
             {
-
+                label3.Text = "Incorrect password or username";
             }
             
         }

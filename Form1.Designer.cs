@@ -32,12 +32,12 @@
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panelOpacityMain = new System.Windows.Forms.Panel();
             this.loginPanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.loginPasword = new System.Windows.Forms.TextBox();
             this.loginText = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panelOpacityMain.SuspendLayout();
             this.loginPanel.SuspendLayout();
@@ -73,6 +73,37 @@
             this.loginPanel.TabIndex = 0;
             this.loginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(185, 150);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(130, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(130, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 3;
+            // 
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(0)))));
@@ -94,6 +125,7 @@
             this.loginPasword.Name = "loginPasword";
             this.loginPasword.Size = new System.Drawing.Size(250, 31);
             this.loginPasword.TabIndex = 1;
+            this.loginPasword.UseSystemPasswordChar = true;
             this.loginPasword.TextChanged += new System.EventHandler(this.loginPasword_TextChanged);
             // 
             // loginText
@@ -104,37 +136,6 @@
             this.loginText.Size = new System.Drawing.Size(250, 31);
             this.loginText.TabIndex = 0;
             this.loginText.TextChanged += new System.EventHandler(this.loginText_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(130, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(130, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(185, 150);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
-            this.label3.TabIndex = 5;
             // 
             // Form1
             // 
