@@ -69,5 +69,26 @@ namespace Alatoo_Medical_Care
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            History history = new History();
+            history.Show();
+            Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddPatient addPatient = new AddPatient();
+            addPatient.Show();
+            Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Upcoming upcoming = new Upcoming();
+            upcoming.Show();
+            Visible = false;
+        }
     }
 }
