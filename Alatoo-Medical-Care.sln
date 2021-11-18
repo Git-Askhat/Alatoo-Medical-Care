@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alatoo-Medical-Care", "Alatoo-Medical-Care.csproj", "{75A7E7BB-D54E-474B-AF29-DFAEBEE1DC0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75A7E7BB-D54E-474B-AF29-DFAEBEE1DC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A7E7BB-D54E-474B-AF29-DFAEBEE1DC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A7E7BB-D54E-474B-AF29-DFAEBEE1DC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A7E7BB-D54E-474B-AF29-DFAEBEE1DC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E16D6FA2-C2A4-43FF-8687-E725581A7001}
+	EndGlobalSection
+EndGlobal
