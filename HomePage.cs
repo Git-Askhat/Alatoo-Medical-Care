@@ -48,26 +48,6 @@ namespace Alatoo_Medical_Care
 
         }
 
-        private void homePagePanel_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void historyPanel_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
