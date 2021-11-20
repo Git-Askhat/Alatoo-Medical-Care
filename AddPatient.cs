@@ -63,11 +63,42 @@ namespace Alatoo_Medical_Care
 
         }
 
+
         private void button4_Click(object sender, EventArgs e)
         {
             Upcoming upcoming = new Upcoming();
             upcoming.Show();
             Visible = false;
+        }
+
+        List<string> id = new List<string>() { "180104045", "180104046", "180104047", "180104048", "180104049" };
+
+        List<Student> list = new List<Student>();
+        string studentId, disease;
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            studentId = textBox1.Text;
+            disease = textBox2.Text;
+
+            History history = new History();
+
+            if (id.Contains(studentId))
+            {
+
+                list.Add(new Student() { studentId = studentId, name = "Test9", surname = "test9", faculty = "wec-17", number = "0777860987", time = "12/11/2021", disease = disease });
+                this.Hide();
+                history.receiveDatat(list);
+                history.Show();
+
+                //textBox1.Text = "";
+                //textBox2.Text = "";
+            }
+        }
+
+        public List<Student> addData()
+        {
+            return list;
         }
     }
 }

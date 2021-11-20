@@ -46,6 +46,9 @@ namespace Alatoo_Medical_Care
             button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 20, 20));
             button3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
 
+            History hist = new History();
+            label1.Text = hist.count().ToString();
+
         }
 
         private void label1_Click(object sender, EventArgs e)

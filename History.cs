@@ -12,57 +12,21 @@ namespace Alatoo_Medical_Care
 {
     public partial class History : Form
     {
+        List<Student> list = new List<Student>();
+        public void setData(List<Student> data)
+        {
+            list = data;
+        }
+        public void receiveDatat(List<Student> data)
+        {
+            foreach (var student in data)
+            {
+                list.Add(new Student() { studentId = student.studentId, name = student.name, surname = student.surname, faculty = student.faculty, disease = student.disease, time = student.time });
+            }
+        }
         public History()
         {
             InitializeComponent();
-        }
-
-        private void History_Load(object sender, EventArgs e)
-        {
-            panelAlpha1.BackColor = Color.FromArgb(80, 10, 10, 69);
-            panelAlpha2.BackColor = Color.FromArgb(200, 5, 5, 49);
-            panelAlpha3.BackColor = Color.FromArgb(80, 10, 10, 69);
-            panelAlpha4.BackColor = Color.FromArgb(80, 10, 10, 69);
-
-            var students = GetStudentList();
-            listView1.Items.Clear();
-            foreach (var student in students)
-            {
-                var row = new string[] { student.studentId, student.name, student.surname, student.faculty, student.disease, student.time };
-                var lv = new ListViewItem(row);
-
-                lv.Tag = student;
-
-                listView1.Items.Add(lv);
-
-
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            HomePage homePage = new HomePage();
-            homePage.Show();
-            Visible = false;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AddPatient addPatient = new AddPatient();
-            addPatient.Show();
-            Visible = false;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Upcoming upcoming = new Upcoming();
-            upcoming.Show();
-            Visible = false;
-        }
-
-        public List<Student> GetStudentList()
-        {
-            var list = new List<Student>();
             list.Add(new Student()
             {
                 studentId = "180104045",
@@ -103,9 +67,63 @@ namespace Alatoo_Medical_Care
                 disease = "Head",
                 time = "19/11/2021"
             });
+        }
 
 
-            return list;
+        private void History_Load(object sender, EventArgs e)
+        {
+            panelAlpha1.BackColor = Color.FromArgb(80, 10, 10, 69);
+            panelAlpha2.BackColor = Color.FromArgb(200, 5, 5, 49);
+            panelAlpha3.BackColor = Color.FromArgb(80, 10, 10, 69);
+            panelAlpha4.BackColor = Color.FromArgb(80, 10, 10, 69);
+
+            AddPatient addPatient = new AddPatient();
+            var d = addPatient.addData();
+            foreach (var student in d)
+            {
+                list.Add(new Student() { studentId = student.studentId, name = student.name, surname = student.surname, faculty = student.faculty, disease = student.disease, time = student.time });
+            }
+
+
+            var students = list;
+            listView1.Items.Clear();
+            foreach (var student in students)
+            {
+                var row = new string[] { student.studentId, student.name, student.surname, student.faculty, student.disease, student.time };
+                var lv = new ListViewItem(row);
+
+                lv.Tag = student;
+
+                listView1.Items.Add(lv);
+
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddPatient addPatient = new AddPatient();
+            addPatient.Show();
+            Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Upcoming upcoming = new Upcoming();
+            upcoming.Show();
+            Visible = false;
+        }
+
+        public int count()
+        {
+            return list.Count;
         }
     }
 }

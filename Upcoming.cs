@@ -52,5 +52,11 @@ namespace Alatoo_Medical_Care
             panelAlpha3.BackColor = Color.FromArgb(80, 10, 10, 69);
             panelAlpha4.BackColor = Color.FromArgb(200, 5, 5, 49);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddSquare addSquare = new AddSquare();
+            addSquare.Show();
+        }
     }
 }
