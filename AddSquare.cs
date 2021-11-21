@@ -23,12 +23,27 @@ namespace Alatoo_Medical_Care
 
         }
 
+        List<Student> data = new List<Student>();
+
+        string stdId, date_, disease_;
         private void Upcoming_Click(object sender, EventArgs e)
         {
-            Upcoming upcoming = new Upcoming();
-            upcoming.Hide();
-            upcoming.Show();
-            Visible = false;
+            stdId = studentId.Text.Trim();
+            date_ = date.Text.Trim();
+            disease_ = date.Text.Trim();
+
+            if (stdId!="" && date_ != "" && disease_ != "") {
+                data.Add(new Student() { studentId = stdId, name = "Ryan", surname = "Watt", faculty = "wec-17", number = "07033001601", time = date_, disease = disease_ });
+                //Upcoming upcoming = new Upcoming();
+                //upcoming.Visible = false;
+               // upcoming.Show();
+                Visible = false;
+            }
+        }
+
+        public List<Student> dataUpcoming()
+        {
+            return data;
         }
     }
 }

@@ -30,6 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Upcoming));
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.surname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.faculty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.number = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.disease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelAlpha1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panelAlpha2 = new System.Windows.Forms.Panel();
@@ -38,15 +47,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panelAlpha4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.surname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.faculty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.number = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.disease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panelAlpha1.SuspendLayout();
             this.panelAlpha2.SuspendLayout();
@@ -63,6 +63,89 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(735, 501);
             this.panel5.TabIndex = 2;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(10, 370);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(120, 120);
+            this.button6.TabIndex = 2;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(605, 370);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(120, 120);
+            this.button5.TabIndex = 1;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.time,
+            this.name,
+            this.surname,
+            this.faculty,
+            this.number,
+            this.disease});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(735, 501);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // time
+            // 
+            this.time.Text = "Time";
+            this.time.Width = 120;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.name.Width = 120;
+            // 
+            // surname
+            // 
+            this.surname.Text = "Surname";
+            this.surname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.surname.Width = 120;
+            // 
+            // faculty
+            // 
+            this.faculty.Text = "Faculty";
+            this.faculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.faculty.Width = 90;
+            // 
+            // number
+            // 
+            this.number.Text = "Number";
+            this.number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.number.Width = 120;
+            // 
+            // disease
+            // 
+            this.disease.Text = "Disease";
+            this.disease.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.disease.Width = 165;
             // 
             // panelAlpha1
             // 
@@ -149,91 +232,6 @@
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.time,
-            this.name,
-            this.surname,
-            this.faculty,
-            this.number,
-            this.disease});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(735, 501);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // time
-            // 
-            this.time.Text = "Time";
-            this.time.Width = 120;
-            // 
-            // name
-            // 
-            this.name.Text = "Name";
-            this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.name.Width = 120;
-            // 
-            // surname
-            // 
-            this.surname.Text = "Surname";
-            this.surname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.surname.Width = 120;
-            // 
-            // faculty
-            // 
-            this.faculty.Text = "Faculty";
-            this.faculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.faculty.Width = 90;
-            // 
-            // number
-            // 
-            this.number.Text = "Number";
-            this.number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.number.Width = 120;
-            // 
-            // disease
-            // 
-            this.disease.Text = "Disease";
-            this.disease.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.disease.Width = 165;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(605, 370);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 120);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(10, 370);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(120, 120);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // Upcoming
             // 

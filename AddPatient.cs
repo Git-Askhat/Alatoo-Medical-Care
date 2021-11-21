@@ -86,7 +86,7 @@ namespace Alatoo_Medical_Care
             if (id.Contains(studentId))
             {
 
-                list.Add(new Student() { studentId = studentId, name = "Test9", surname = "test9", faculty = "wec-17", number = "0777860987", time = "12/11/2021", disease = disease });
+                list.Add(new Student() { studentId = studentId, name = "Ryan", surname = "Watt", faculty = "wec-17", number = "07033001601", time = "12/11/2021", disease = disease });
                 this.Hide();
                 history.receiveDatat(list);
                 history.Show();

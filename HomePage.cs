@@ -47,7 +47,10 @@ namespace Alatoo_Medical_Care
             button3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
 
             History hist = new History();
+            Upcoming upcom = new Upcoming();
+
             label1.Text = hist.count().ToString();
+            label3.Text = upcom.getSize().ToString();
 
         }
 

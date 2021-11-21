@@ -33,38 +33,38 @@ namespace Alatoo_Medical_Care
                 name = "Askhat",
                 surname = "Shailoobekov",
                 faculty = "com-18",
-                number = "0777860987",
+                number = "0770840965",
                 disease = "Head",
                 time = "19/11/2021"
             });
             list.Add(new Student()
             {
                 studentId = "180104046",
-                name = "Test1",
-                surname = "Test1",
-                faculty = "com-18",
-                number = "0777860987",
-                disease = "Head",
+                name = "Liam",
+                surname = "Noah",
+                faculty = "com-19",
+                number = "0500774302",
+                disease = "Leg",
                 time = "19/11/2021"
             });
             list.Add(new Student()
             {
                 studentId = "180104047",
-                name = "Test1",
-                surname = "Test1",
-                faculty = "com-18",
-                number = "0777860987",
+                name = "Oliver",
+                surname = "Grimes",
+                faculty = "mat-18",
+                number = "0990665382",
                 disease = "Head",
                 time = "19/11/2021"
             });
             list.Add(new Student()
             {
                 studentId = "180104048",
-                name = "Test1",
-                surname = "Test1",
-                faculty = "com-18",
-                number = "0777860987",
-                disease = "Head",
+                name = "Michael",
+                surname = "Wyatt",
+                faculty = "wec-18",
+                number = "0772568322",
+                disease = "Flu",
                 time = "19/11/2021"
             });
         }
