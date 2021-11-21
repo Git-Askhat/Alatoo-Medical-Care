@@ -146,6 +146,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 501);
             this.Controls.Add(this.panelOpacityMain);
+            this.MaximumSize = new System.Drawing.Size(900, 540);
+            this.MinimumSize = new System.Drawing.Size(900, 540);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

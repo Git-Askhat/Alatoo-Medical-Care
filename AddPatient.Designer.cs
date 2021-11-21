@@ -187,6 +187,8 @@
             this.Controls.Add(this.panelAlpha4);
             this.Controls.Add(this.panelAlpha1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.MaximumSize = new System.Drawing.Size(900, 540);
+            this.MinimumSize = new System.Drawing.Size(900, 540);
             this.Name = "AddPatient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPatient";

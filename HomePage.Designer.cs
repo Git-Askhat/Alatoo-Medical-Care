@@ -312,6 +312,8 @@
             this.Controls.Add(this.panelAlpha3);
             this.Controls.Add(this.panelAlpha2);
             this.Controls.Add(this.homePageOpacity);
+            this.MaximumSize = new System.Drawing.Size(900, 540);
+            this.MinimumSize = new System.Drawing.Size(900, 540);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";

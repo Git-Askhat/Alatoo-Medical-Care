@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.surname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.faculty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.number = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.disease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelAlpha1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panelAlpha2 = new System.Windows.Forms.Panel();
@@ -38,13 +45,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panelAlpha4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.surname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.faculty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.number = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.disease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panelAlpha1.SuspendLayout();
             this.panelAlpha2.SuspendLayout();
@@ -59,6 +59,62 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(735, 501);
             this.panel1.TabIndex = 0;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.name,
+            this.surname,
+            this.faculty,
+            this.number,
+            this.disease,
+            this.time});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(735, 501);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            this.name.Width = 100;
+            // 
+            // surname
+            // 
+            this.surname.Text = "Surname";
+            this.surname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.surname.Width = 100;
+            // 
+            // faculty
+            // 
+            this.faculty.Text = "Faculty";
+            this.faculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.faculty.Width = 100;
+            // 
+            // number
+            // 
+            this.number.Text = "Number";
+            this.number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.number.Width = 100;
+            // 
+            // disease
+            // 
+            this.disease.Text = "Disease";
+            this.disease.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.disease.Width = 180;
+            // 
+            // time
+            // 
+            this.time.Text = "Time";
+            this.time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.time.Width = 150;
             // 
             // panelAlpha1
             // 
@@ -149,62 +205,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.name,
-            this.surname,
-            this.faculty,
-            this.number,
-            this.disease,
-            this.time});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(735, 501);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // name
-            // 
-            this.name.Text = "Name";
-            this.name.Width = 100;
-            // 
-            // surname
-            // 
-            this.surname.Text = "Surname";
-            this.surname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.surname.Width = 100;
-            // 
-            // faculty
-            // 
-            this.faculty.Text = "Faculty";
-            this.faculty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.faculty.Width = 100;
-            // 
-            // number
-            // 
-            this.number.Text = "Number";
-            this.number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.number.Width = 100;
-            // 
-            // disease
-            // 
-            this.disease.Text = "Disease";
-            this.disease.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.disease.Width = 180;
-            // 
-            // time
-            // 
-            this.time.Text = "Time";
-            this.time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.time.Width = 150;
-            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +216,8 @@
             this.Controls.Add(this.panelAlpha4);
             this.Controls.Add(this.panelAlpha1);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(900, 540);
+            this.MinimumSize = new System.Drawing.Size(900, 540);
             this.Name = "History";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "History";

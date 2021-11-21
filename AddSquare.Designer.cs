@@ -97,6 +97,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(484, 501);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(500, 540);
+            this.MinimumSize = new System.Drawing.Size(500, 540);
             this.Name = "AddSquare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddSquare";
