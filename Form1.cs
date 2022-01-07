@@ -31,6 +31,7 @@ namespace Alatoo_Medical_Care
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Colors of windowses
             panelOpacityMain.BackColor = Color.FromArgb(80, 0, 0, 59);
             loginPanel.BackColor = Color.FromArgb(200, 0, 0, 0);
 

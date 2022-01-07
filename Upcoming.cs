@@ -24,7 +24,7 @@ namespace Alatoo_Medical_Care
                 faculty = "com-19",
                 number = "0500774302",
                 disease = "An injection",
-                time = "30/11/2021"
+                time = "14/01/2022"
             });
             data.Add(new Student()
             {
@@ -34,7 +34,7 @@ namespace Alatoo_Medical_Care
                 faculty = "mat-18",
                 number = "0990665382",
                 disease = "Head",
-                time = "1/12/2021"
+                time = "16/01/2022"
             });
         }
 
@@ -90,7 +90,7 @@ namespace Alatoo_Medical_Care
             listView1.Items.Clear();
             foreach (var student in students)
             {
-                var row = new string[] { student.studentId, student.name, student.surname, student.faculty, student.disease, student.time };
+                var row = new string[] { student.time, student.name, student.surname, student.faculty, student.number, student.disease };
                 var lv = new ListViewItem(row);
 
                 lv.Tag = student;

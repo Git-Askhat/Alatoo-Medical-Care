@@ -52,6 +52,7 @@ namespace Alatoo_Medical_Care
 
         private void AddPatient_Load(object sender, EventArgs e)
         {
+            // Colors and opacity of main windows
             panel1.BackColor = Color.FromArgb(200, 0, 0, 29);
 
             panelAlpha1.BackColor = Color.FromArgb(80, 10, 10, 69);
@@ -86,7 +87,7 @@ namespace Alatoo_Medical_Care
             if (id.Contains(studentId))
             {
 
-                list.Add(new Student() { studentId = studentId, name = "Ryan", surname = "Watt", faculty = "wec-17", number = "07033001601", time = "12/11/2021", disease = disease });
+                list.Add(new Student() { name = "Askhat", surname = "Shailoobekov", faculty = "com-18", number = "0777860987", time = "06/01/2022", disease = disease });
                 this.Hide();
                 history.receiveDatat(list);
                 history.Show();

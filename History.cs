@@ -21,7 +21,7 @@ namespace Alatoo_Medical_Care
         {
             foreach (var student in data)
             {
-                list.Add(new Student() { studentId = student.studentId, name = student.name, surname = student.surname, faculty = student.faculty, disease = student.disease, time = student.time });
+                list.Add(new Student() { studentId = student.studentId, name = student.name, surname = student.surname, faculty = student.faculty, number = student.number,  disease = student.disease, time = student.time });
             }
         }
         public History()
@@ -35,7 +35,7 @@ namespace Alatoo_Medical_Care
                 faculty = "com-18",
                 number = "0770840965",
                 disease = "Head",
-                time = "19/11/2021"
+                time = "04/01/2022"
             });
             list.Add(new Student()
             {
@@ -45,7 +45,7 @@ namespace Alatoo_Medical_Care
                 faculty = "com-19",
                 number = "0500774302",
                 disease = "Leg",
-                time = "19/11/2021"
+                time = "04/01/2022"
             });
             list.Add(new Student()
             {
@@ -55,7 +55,7 @@ namespace Alatoo_Medical_Care
                 faculty = "mat-18",
                 number = "0990665382",
                 disease = "Head",
-                time = "19/11/2021"
+                time = "04/01/2022"
             });
             list.Add(new Student()
             {
@@ -65,7 +65,7 @@ namespace Alatoo_Medical_Care
                 faculty = "wec-18",
                 number = "0772568322",
                 disease = "Flu",
-                time = "19/11/2021"
+                time = "05/01/2022"
             });
         }
 
@@ -89,7 +89,7 @@ namespace Alatoo_Medical_Care
             listView1.Items.Clear();
             foreach (var student in students)
             {
-                var row = new string[] { student.studentId, student.name, student.surname, student.faculty, student.disease, student.time };
+                var row = new string[] { student.name, student.surname, student.faculty, student.number, student.disease, student.time };
                 var lv = new ListViewItem(row);
 
                 lv.Tag = student;
