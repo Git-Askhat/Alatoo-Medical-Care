@@ -1,7 +1,8 @@
 # Alatoo-Medical-Care
 This is Desktop note, appointments Application. Easy to write students(history), remind students who made appointments. It helps Ala-Too Med-Clinic
 
-### Features: Connect to Database
+### Written in C#
+### For database used SQLite
 
 ### Login: admin 
 ### Password: admin
